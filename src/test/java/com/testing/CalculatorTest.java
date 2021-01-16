@@ -8,8 +8,11 @@ import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
 
+    private Calculator calculator;
+
     @Before
     public void setUp() throws Exception {
+        calculator = new Calculator();
     }
 
     @After
@@ -17,11 +20,23 @@ public class CalculatorTest {
     }
 
     @Test()
-    public void add() {
+    public void shouldReturnSumWhenTwoNumbersGiven() {
         int a = 10;
         int b = 20;
-        int result = Calculator.add(a, b);
+
+        int result = calculator.add(a, b);
+
         assertEquals(30, result);
+
+    }
+    @Test()
+    public void shouldReturnSumWhenAddO() {
+        int a = 10;
+        int b = 0;
+
+        int result = calculator.add(a, b);
+
+        assertEquals(10, result);
 
     }
 }

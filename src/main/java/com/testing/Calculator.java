@@ -1,7 +1,7 @@
 package com.testing;
 
 public class Calculator {
-    public static  int add(int a, int b){
+    public int add(int a, int b){
         return a+b;
     }
 }
