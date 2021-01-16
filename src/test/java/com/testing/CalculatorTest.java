@@ -1,6 +1,7 @@
 package com.testing;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,8 +15,9 @@ public class CalculatorTest {
     public void tearDown() throws Exception {
     }
 
-    @Test(expected = RuntimeException.class)
+    @Test()
     public void add() {
-        throw new RuntimeException("Ops");
+        Assert.fail("fail");
+
     }
 }
