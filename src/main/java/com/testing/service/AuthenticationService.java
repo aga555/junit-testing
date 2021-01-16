@@ -1,4 +1,7 @@
-package com.testing;
+package com.testing.service;
+
+import com.testing.User;
+import com.testing.data.UserRepository;
 
 public class AuthenticationService {
     private UserRepository repository;

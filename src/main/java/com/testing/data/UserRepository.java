@@ -1,11 +1,12 @@
-package com.testing;
+package com.testing.data;
 
-import javax.jws.soap.SOAPBinding;
+import com.testing.User;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class UserRepository {
-    public User  findByUserName(final String username) {
+    public User findByUserName(final String username) {
         return users.get(username);
     }
     private Map<String,User> users= new HashMap<String, User>();
