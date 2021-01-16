@@ -1,9 +1,10 @@
 package com.testing;
 
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
 
@@ -17,7 +18,10 @@ public class CalculatorTest {
 
     @Test()
     public void add() {
-        Assert.fail("fail");
+        int a = 10;
+        int b = 20;
+        int result = Calculator.add(a, b);
+        assertEquals(30, result);
 
     }
 }
